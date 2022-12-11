@@ -1,6 +1,6 @@
-numpy
-pandas
-Pillow
-qrcode
-streamlit
-streamlit_lottie
+deta==1.1.0
+plotly==5.11.0
+python-dotenv==0.21.0
+streamlit==1.15.2
+streamlit_lottie==0.0.3
+streamlit_option_menu==0.3.2
