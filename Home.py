@@ -4,7 +4,8 @@ from streamlit_option_menu import option_menu
 
 import plotly.graph_objects as go
 import calendar
-from datetime import datetime,date
+from datetime import datetime
+from deta import Deta 
 
 from utils import *
 import database as db
@@ -25,6 +26,14 @@ def main():
     )
   
     st.title("Fantastic Finance Tracker💸")
+
+    # Connect to Deta Base with your Project Key
+    deta = Deta(st.secrets["deta_key"])
+
+    # Access Desired Database
+    db = deta.Base("financial_reports")
+
+
     hide_footer()
     # Load and display animation
     anim = lottie_local("assets/animations/money.json")
@@ -79,7 +88,7 @@ def main():
                 incomes = {i: st.session_state[i] for i in income_sources}
                 expenses = {e: st.session_state[e] for e in expense_areas}
                 # Post data to desired database
-                db.submit_finance_data(period, incomes, expenses)
+                db.put({"key": period, "incomes": incomes, "expenses": expenses})
                 st.success("Updated Records!")
                 st.balloons()
 
@@ -87,12 +96,16 @@ def main():
     if selected == "Data Visualization":
         st.header("Data Visualization")
         with st.form(key = "saved_periods"):
-            # Fetch all the periods for which user has financial data and allow user the select a particular period for analysis
+            # Fetch all the periods for which user has financial data
+            res = db.fetch()
+            items = res.items
+            periods = [item["key"] for item in items]
+            # Allow the user to select a particular period
             period = st.selectbox("Select Period:", db.get_all_periods())
             submitted = st.form_submit_button("Show Finances")
             if submitted:
                 # Get data from database
-                period_data = db.get_period(period)
+                period_data = db.get(period)
                 comment = period_data.get("comment")
                 expenses = period_data.get("expenses")
                 incomes = period_data.get("incomes")
@@ -139,6 +152,7 @@ def generate_finance_sankey(incomes,expenses)->None:
         fig.update_layout(margin=dict(l=0, r=0, t=5, b=5))
         # Plot the Sankey Chart Figure
         st.plotly_chart(fig, use_container_width=True)
+
 
 
 if __name__ == "__main__":
