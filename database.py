@@ -3,14 +3,15 @@ from deta import Deta
 from dotenv import load_dotenv
 import os
 
-# ------ Use this for testing in local system -------
+# ------ 1.Use this for testing in local system -------
+
 # # Load the environment variables file
 # load_dotenv(".env")
 # # Read the value for DETA Key
 # project_key = os.getenv("DETA_KEY")
 
-# ------ Use this for streamlit sharing/Heroku -------
-project_key = st.secrets("DELTA_KEY")
+# ------ 2. Use this for streamlit sharing/Heroku -------
+project_key = st.secrets("DETA_KEY")
 
 
 # Connect to the DETA Project
