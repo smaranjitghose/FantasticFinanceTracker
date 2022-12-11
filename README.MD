@@ -87,3 +87,7 @@ deta_key = "your_deta_project_key"
 **No Free Tier**
 - [Heroku](https://www.heroku.com/)
 - [Digital Ocean](https://www.digitalocean.com/)
+
+## Note ✏️
+- For Streamlit Sharing, mentioning versions of the modules in requirements throws error at times
+- Error 401: If project key is changed/removed in the Deta Dashboard (Free Tier issues)
