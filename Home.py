@@ -8,7 +8,6 @@ from datetime import datetime
 from deta import Deta 
 
 from utils import *
-import database as db
 
 def main():
     """
