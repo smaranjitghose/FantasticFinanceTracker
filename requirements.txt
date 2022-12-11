@@ -1,6 +1,7 @@
-deta==1.1.0
-plotly==5.11.0
-python-dotenv==0.21.0
-streamlit==1.15.2
-streamlit_lottie==0.0.3
-streamlit_option_menu==0.3.2
+deta
+plotly
+# The following is required only for local system
+# python-dotenv==0.21.0
+streamlit
+streamlit_lottie
+streamlit_option_menu
