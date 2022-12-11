@@ -1,7 +1,5 @@
 deta
 plotly
-# The following is required only for local system
-# python-dotenv==0.21.0
 streamlit
 streamlit_lottie
 streamlit_option_menu

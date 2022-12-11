@@ -18,9 +18,9 @@ def main():
         page_icon = '💸',
         layout = "centered",
         menu_items={
-        'Get Help': 'https://github.com/smaranjitghose/fantasticqrcode',
-        'Report a bug': "https://github.com/smaranjitghose/fantasticqrcode/issues",
-        'About': "## A minimalistic application to track income using python"
+        'Get Help': 'https://github.com/smaranjitghose/FantasticFinanceTracker',
+        'Report a bug': "https://github.com/smaranjitghose/FantasticFinanceTracker/issues",
+        'About': "## A minimalistic application to track one's finances over a period built using Python"
         }
     )
   
@@ -100,7 +100,7 @@ def main():
             items = res.items
             periods = [item["key"] for item in items]
             # Allow the user to select a particular period
-            period = st.selectbox("Select Period:", db.get_all_periods())
+            period = st.selectbox("Select Period:", periods)
             submitted = st.form_submit_button("Show Finances")
             if submitted:
                 # Get data from database
