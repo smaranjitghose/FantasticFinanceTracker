@@ -42,13 +42,17 @@ touch .env
 
 - Copy the Project Key
 
-- Paste it inside the environment file `.env` as the value of the variable ``DETA_KEY`` within double quotes (i.e. as a string)
+- Create a `secrets.toml` file inside the `.streamlit` sub-directory
 
-- Save the `.env` file
+```
+ touch .streamlit/secrets.toml
+```
 
-- Open `database.py` in your desired IDE and do the following changes for obtaining the Deta Key:
-    - Uncomment the lines of code under `# 1.Use this for testing in local system`
-    - Comment out the line `project_key = st.secrets("DELTA_KEY")`
+- Open the `secrets.toml` file, create a variable `deta_key` and assign in to value of the copied project key. Save the file
+
+```
+deta_key = "your_deta_project_key"
+```
 
 - Load the application
 

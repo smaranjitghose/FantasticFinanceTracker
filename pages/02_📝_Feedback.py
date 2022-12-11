@@ -6,16 +6,14 @@ from streamlit_lottie import st_lottie
 from utils import *
 
 st.set_page_config(
-        page_icon="🤳",
-        page_title = "Fantastic QR Code Gen",
-        layout="centered",
-        initial_sidebar_state="expanded",
+        page_title= "Fantastic Finance Tracker",
+        page_icon = '💸',
+        layout = "centered",
         menu_items={
-        'Get Help': 'https://github.com/smaranjitghose/fantasticqrcode',
-        'Report a bug': "https://github.com/smaranjitghose/fantasticqrcode/issues",
-        'About': "## A minimalistic application to generate QR Codes using python"
-        }
-    )
+        'Get Help': 'https://github.com/smaranjitghose/FantasticFinanceTracker',
+        'Report a bug': "https://github.com/smaranjitghose/FantasticFinanceTracker/issues",
+        'About': "## A minimalistic application to track one's finances over a period built using Python"
+        } )
 
 st.title(":mailbox: Get In Touch With Me!")
 hide_footer()
