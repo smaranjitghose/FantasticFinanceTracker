@@ -5,8 +5,5 @@ secondaryBackgroundColor = "#586e75"
 textColor = "#fafafa"
 font="sans serif"
 
-[server]
-port = 80
-
 [browser]
 gatherUsageStats = false
