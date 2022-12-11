@@ -12,7 +12,7 @@ A minimalistic application to track one's finances over a period built using Pyt
 
 - Clone the repository 
     ```
-    git clone https://github.com/smaranjitghose/fantasticqrcode
+    git clone https://github.com/smaranjitghose/FantasticFinanceTracker.git
     ```
 - Change the directory to the cloned project
     
@@ -64,13 +64,16 @@ deta_key = "your_deta_project_key"
 
 - To stop the application, press `CTRL + C` in your terminal
 
+## Demo 👇
+
+[Click Here 🔗](https://smaranjitghose-fantasticfinancetracker-home-7p438y.streamlit.app/)
+
 ## Future Work 🏗️
 
 - Dockerize the Application
 - Experiment with other NoSQL Databases like MongoDB and hosting options like Supabase, Atlas,etc
 - Improve Data Visualization (more charts)
 - Experiment with user login
-
 
 ## Deployment Options 🥊
 
