@@ -1,10 +1,13 @@
 # Fantastic Finance Tracker 💸
 
-A minimalistic application to track one's finances over a period built using Python
-
 <p align = "center"><img src = "./assets/wallet.gif" height = 300 alt = "Wallet Icon"></p>
 
+A minimalistic application to track one's finances over a period built using Python
+
+---
 ## Set-Up ⚒️
+
+<p align = "center"><img src = "./assets/setup.gif" height = 300 alt = "SetUp Icon"></p>
 
 - Ensure you have the latest stable version of [Python](https://www.python.org/downloads/) in your system
 
@@ -60,14 +63,16 @@ deta_key = "your_deta_project_key"
     streamlit run Home.py
     ```
 
-- If the app does not load by itself in your default browser, open a browser of your choice and navigate to  `http://localhost:80`
+- If the app does not load by itself in your default browser, open a browser of your choice and navigate to  `http://localhost:8501`
 
 - To stop the application, press `CTRL + C` in your terminal
 
+---
 ## Demo 👇
 
 [Click Here 🔗](https://smaranjitghose-fantasticfinancetracker-home-7p438y.streamlit.app/)
 
+---
 ## Future Work 🏗️
 
 - Dockerize the Application
@@ -75,7 +80,18 @@ deta_key = "your_deta_project_key"
 - Improve Data Visualization (more charts)
 - Experiment with user login
 
+---
+## Note ✏️
+
+<p align = "center"><img src = "./assets/notes.gif" height = 300 alt = "Note Icon"></p>
+
+- For Streamlit Sharing, mentioning versions of the modules in requirements throws error at times 
+- Error 401: If project key is changed/removed in the Deta Dashboard (Free Tier issues)
+
+---
 ## Deployment Options 🥊
+
+<p align = "center"><img src = "./assets/hosting.gif" height = 300 alt = "Hosting Icon"></p>
 
 **Free Tier**
 - [Streamlit Cloud](https://streamlit.io/cloud)  ✔️
@@ -88,6 +104,9 @@ deta_key = "your_deta_project_key"
 - [Heroku](https://www.heroku.com/)
 - [Digital Ocean](https://www.digitalocean.com/)
 
-## Note ✏️
-- For Streamlit Sharing, mentioning versions of the modules in requirements throws error at times 
-- Error 401: If project key is changed/removed in the Deta Dashboard (Free Tier issues)
+---
+## Acknowledgements 🙏
+
+<p align = "center"><img src = "https://media.giphy.com/media/1gQ6f5kJdBtGPSmdgS/giphy.gif" height = 300 alt = "Acknowledgment Icon"></p>
+
+- **Animations**: [LottieFiles](https://lottiefiles.com)
