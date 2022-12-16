@@ -4,7 +4,7 @@
 
 A minimalistic application to track one's finances over a period built using Python
 
----
+
 ## Set-Up ⚒️
 
 <p align = "center"><img src = "./assets/setup.gif" height = 300 alt = "SetUp Icon"></p>
@@ -67,12 +67,15 @@ deta_key = "your_deta_project_key"
 
 - To stop the application, press `CTRL + C` in your terminal
 
----
 ## Demo 👇
 
 [Click Here 🔗](https://smaranjitghose-fantasticfinancetracker-home-7p438y.streamlit.app/)
 
----
+<p align = "center"><img src = "./assets/demo_snapshot_v1_1.png" height = 300 width = 450 alt = "Finance Tracker Snapshot"></p>
+
+<p align = "center"><img src = "./assets/demo_snapshot_v1_2.png" height = 300 width = 450 alt = "Finance Tracker Snapshot"></p>
+
+
 ## Future Work 🏗️
 
 - Dockerize the Application
@@ -80,7 +83,7 @@ deta_key = "your_deta_project_key"
 - Improve Data Visualization (more charts)
 - Experiment with user login
 
----
+
 ## Note ✏️
 
 <p align = "center"><img src = "./assets/notes.gif" height = 300 alt = "Note Icon"></p>
@@ -88,7 +91,7 @@ deta_key = "your_deta_project_key"
 - For Streamlit Sharing, mentioning versions of the modules in requirements throws error at times 
 - Error 401: If project key is changed/removed in the Deta Dashboard (Free Tier issues)
 
----
+
 ## Deployment Options 🥊
 
 <p align = "center"><img src = "./assets/hosting.gif" height = 300 alt = "Hosting Icon"></p>
@@ -104,7 +107,7 @@ deta_key = "your_deta_project_key"
 - [Heroku](https://www.heroku.com/)
 - [Digital Ocean](https://www.digitalocean.com/)
 
----
+
 ## Acknowledgements 🙏
 
 <p align = "center"><img src = "https://media.giphy.com/media/1gQ6f5kJdBtGPSmdgS/giphy.gif" height = 300 alt = "Acknowledgment Icon"></p>
