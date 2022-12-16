@@ -1,15 +1,23 @@
+# GitHub related
+.git/*
+README.MD
+LICENSE
+CODE_OF_CONDUCT.MD
+.gitignore
+
 # Project Specific
 .streamlit/secrets.toml
 input/
+
+# Configuration Files for Heroku
+Procfile
+setup.sh
+.slugignore
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Project Specific
-.streamlit/secrets.toml
-input/
 
 # Environments
 .env
@@ -99,6 +107,7 @@ target/
 .vscode/*
 .DS_Store
 
+
 # IPython
 profile_default/
 ipython_config.py
@@ -140,6 +149,8 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
+
+
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -163,4 +174,3 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
-
