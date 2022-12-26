@@ -35,7 +35,7 @@ A minimalistic application to track one's finances over a period built using Pyt
 touch .env
 ```
 
-- Open the ```.env`` file in your desired IDE and define a variable ``DETA_KEY= ""``
+- Open the ``.env`` file in your desired IDE and define a variable ``DETA_KEY= ""``
 
 - Visit [Deta](https://www.deta.sh/) and Sign up for a free Account
 
